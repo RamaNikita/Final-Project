@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { checkToken } from "../../utilities/users-service";
-import CategoryList from "../../components/CategoryList/CategoryList";
+// import CategoryList from "../../components/CategoryList/CategoryList";
 // import UserLogOut from "../../components/UserLogOut/UserLogOut";
 import axios from "axios";
 import RecipeCard from "../../components/RecipeCard/RecipeCard";
-import { Link } from "react-router-dom";
-export default function RecipesPage() {
+// import { Link } from "react-router-dom";
+export default function RecipesPage({ onStateChange }) {
   let [recipes, setRecipes] = useState([]);
   const categoriesRef = useRef([]);
 
@@ -45,7 +45,7 @@ export default function RecipesPage() {
     <>
       <div>
         {recipes.map((recipe, i) => {
-          return <RecipeCard recipe={recipe} />;
+          return <RecipeCard recipe={recipe} onStateChange={onStateChange} />;
         })}
       </div>
     </>
