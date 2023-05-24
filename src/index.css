@@ -24,7 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./panjabi\ \(1\).jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 
   background-position: center;
   padding: 2vmin;

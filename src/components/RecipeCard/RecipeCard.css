@@ -1,0 +1,17 @@
+.container {
+    width: 400px; /* Increased width to 400px */
+    background-color: bisque;
+    
+}
+
+.main {
+    padding:5px;
+    justify-content:space-evenly;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    /* border: double black; */
+    /* background-color: rgb(71, 67, 56); */
+    justify-content: center; /* Added to horizontally center the content */
+    align-items: center; /* Added to vertically center the content */
+}

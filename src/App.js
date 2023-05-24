@@ -3,8 +3,9 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getUser } from "./utilities/users-service";
+import FavoriteRecipes from "./pages/MyFavoriteRecipePage/MyFavoriteRecipePage";
 //Pages
-import NewOrderPage from "./pages/MyFavoriteRecipePage/MyFavoriteRecipePage";
+// import NewOrderPage from "./pages/MyFavoriteRecipePage/MyFavoriteRecipePage";
 import AuthPage from "./pages/AuthPage/AuthPage.js";
 import OrderHistoryPage from "./pages/RecipesPage/RecipesPage";
 //NavBar
@@ -20,7 +21,7 @@ function App() {
           {" "}
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/favoriteRecipe" element={<NewOrderPage />} />
+            <Route path="/favoriteRecipe" element={<FavoriteRecipes />} />
             <Route path="/recipes" element={<OrderHistoryPage />} />
           </Routes>
         </>
