@@ -5,8 +5,6 @@ Descriprtion:
 I have created an web application where new users can sign up /existing users can Log in to my application,
 view the Recipes add recipes in their favorite list and create new recipes also delete and edit recipes created by user.
 
-User can able to login/log out and email address is Unique
-
 ## Technologies Used
 
 React
