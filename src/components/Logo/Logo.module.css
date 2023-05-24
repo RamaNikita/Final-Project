@@ -1,0 +1,12 @@
+.Logo {
+    height: 12vmin;
+    width: 12vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+           }
+    img{
+        border-radius: 50%;
+        border:1px solid rgb(33, 31, 31)
+    }

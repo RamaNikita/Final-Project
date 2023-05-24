@@ -1,0 +1,22 @@
+.AuthPage {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2vmin;
+    position: fixed;
+    margin-left: 10%;
+  }
+  /* .AuthPage div{
+    margin-top:2px;
+  } */
+  
+  .AuthPage h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6vmin;
+    text-align: center;
+    color:rgb(255, 255, 255);
+   
+    cursor: pointer;
+  }
