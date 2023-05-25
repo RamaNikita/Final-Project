@@ -10,7 +10,7 @@ import AuthPage from "./pages/AuthPage/AuthPage.js";
 import RecipesPage from "./pages/RecipesPage/RecipesPage";
 //NavBar
 import NavBar from "./components/NavBar/NavBar.js";
-
+import CreateRecipePage from "./pages/CreateRecipePage/CreateRecipePage";
 function App() {
   const [user, setUser] = useState(getUser());
   console.log("Current user", user);
@@ -33,6 +33,7 @@ function App() {
               path="/recipes"
               element={<RecipesPage onStateChange={handleStateChanged} />}
             />
+            <Route path="/create" element={<CreateRecipePage />}></Route>
           </Routes>
         </>
       ) : (
